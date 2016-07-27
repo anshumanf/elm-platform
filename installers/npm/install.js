@@ -38,7 +38,7 @@ function downloadBinaries() {
     var operatingSystem = process.platform;
 
     var filename = operatingSystem + "-" + arch + ".tar.gz";
-    var url = "https://dl.bintray.com/elmlang/elm-platform/"
+    var url = "http://dl.bintray.com/elmlang/elm-platform/"
       + platform.elmVersion + "/" + filename;
 
     var untar = tar.Extract({path: distDir, strip: 1})
